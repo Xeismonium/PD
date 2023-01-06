@@ -151,7 +151,7 @@
                         <?= $row['alamat'];?>
                       </td>
                       <th class="px-6 py-4">
-                          <a href="halaman/updatePasien.php?id=<?=$row['id_pasien'];?>" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                          <a href="updatePasien.php?id=<?=$row['id_pasien'];?>" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                            | 
                           <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
                       </th>

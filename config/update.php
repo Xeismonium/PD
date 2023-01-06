@@ -8,10 +8,10 @@ if (isset($_POST['submit'])) {
     $ttl = $_POST['ttl'];
     $gender = $_POST['gender'];
 
-    $queryUpdate = "UPDATE pasien SET nama = '$nama', alamat = '$alamat', nomor_telepon = '$nomor_hp', ttl = '$ttl', jenis_kelamin = '$gender' WHERE id_pasien = $id";
+    $queryUpdate = "UPDATE pasien SET nama = '$nama', alamat = '$alamat', nomor_telepon = '$nomor_hp', tanggal_lahir = '$ttl', jenis_kelamin = '$gender' WHERE id_pasien = $id";
     $resultUpdate = mysqli_query($conn, $queryUpdate);
     if ($resultUpdate) {
-        header('Location: ../pasien.php');
+        header('Location: ../view/pasien.php');
     } else {
         echo "Gagal";
     }
